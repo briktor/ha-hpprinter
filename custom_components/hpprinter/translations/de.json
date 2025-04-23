@@ -112,6 +112,9 @@
       "total_impressions": {
         "name": "Gesamtseiten"
       },
+      "subscription_impressions": {
+        "name": "Abonnementseiten"
+      },
       "warranty_expiration_date": {
         "name": "Ablaufsdatum"
       }

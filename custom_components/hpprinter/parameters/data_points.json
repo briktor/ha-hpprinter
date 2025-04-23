@@ -205,6 +205,13 @@
         "state_class": "total_increasing",
         "icon": "mdi:file-document-check"
       },
+      "subscription_impressions": {
+        "path": "SubscriptionImpressions",
+        "platform": "sensor",
+        "unit_of_measurement": "pages",
+        "state_class": "total_increasing",
+        "icon": "mdi:file-document-check"
+      },
       "monochrome_impressions": {
         "path": "MonochromeImpressions",
         "platform": "sensor",

@@ -85,6 +85,9 @@
       "total_impressions": {
         "name": "Total pages"
       },
+      "subscription_impressions": {
+        "name": "Subscription pages"
+      },
       "hardware_config_device_connectivity_port_type": {
         "name": "Port Type"
       },
