@@ -146,5 +146,37 @@
         "title": "Opcje drukarki HP."
       }
     }
+  },
+  "services": {
+    "clean_cartridges": {
+      "name": "Czyszczenie wkładów",
+      "description": "Wykonaj standardowe czyszczenie wkładów drukarki.",
+      "fields": {
+        "entry": {
+          "name": "Wkład",
+          "description": "Wkład drukarki"
+        }
+      }
+    },
+    "deep_clean_cartridges": {
+      "name": "Głębokie czyszczenie wkładów",
+      "description": "Wykonaj głębokie czyszczenie wkładów drukarki.",
+      "fields": {
+        "entry": {
+          "name": "Wkład",
+          "description": "Wkład drukarki"
+        }
+      }
+    },
+    "print_test_page": {
+      "name": "Drukuj stronę testową",
+      "description": "Wydrukuj stronę testową na drukarce.",
+      "fields": {
+        "entry": {
+          "name": "Wkład",
+          "description": "Wkład drukarki"
+        }
+      }
+    }
   }
 }

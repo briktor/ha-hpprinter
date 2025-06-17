@@ -146,5 +146,37 @@
         "title": "Op\u00e7\u00f5es para a impressora HP."
       }
     }
+  },
+  "services": {
+    "clean_cartridges": {
+      "name": "Limpar cartuchos",
+      "description": "Realiza uma limpeza padrão dos cartuchos da impressora.",
+      "fields": {
+        "entry": {
+          "name": "Cartucho",
+          "description": "Cartucho da impressora"
+        }
+      }
+    },
+    "deep_clean_cartridges": {
+      "name": "Limpeza profunda dos cartuchos",
+      "description": "Realiza uma limpeza profunda dos cartuchos da impressora.",
+      "fields": {
+        "entry": {
+          "name": "Cartucho",
+          "description": "Cartucho da impressora"
+        }
+      }
+    },
+    "print_test_page": {
+      "name": "Imprimir página de teste",
+      "description": "Imprime uma página de teste na impressora.",
+      "fields": {
+        "entry": {
+          "name": "Cartucho",
+          "description": "Cartucho da impressora"
+        }
+      }
+    }
   }
 }

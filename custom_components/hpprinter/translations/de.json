@@ -149,5 +149,37 @@
         "title": "Optionen f\u00fcr HP-Drucker."
       }
     }
+  },
+  "services": {
+    "clean_cartridges": {
+      "name": "Patronen reinigen",
+      "description": "Führt eine Standardreinigung der Druckerpatronen durch.",
+      "fields": {
+        "entry": {
+          "name": "Eintrag",
+          "description": "Der Druckereintrag"
+        }
+      }
+    },
+    "deep_clean_cartridges": {
+      "name": "Patronen tiefenreinigen",
+      "description": "Führt eine Tiefenreinigung der Druckerpatronen durch.",
+      "fields": {
+        "entry": {
+          "name": "Eintrag",
+          "description": "Der Druckereintrag"
+        }
+      }
+    },
+    "print_test_page": {
+      "name": "Testseite drucken",
+      "description": "Druckt eine Testseite auf dem Drucker.",
+      "fields": {
+        "entry": {
+          "name": "Eintrag",
+          "description": "Der Druckereintrag"
+        }
+      }
+    }
   }
 }

@@ -146,5 +146,37 @@
         "title": "Valgmuligheder til HP -printer."
       }
     }
+  },
+  "services": {
+    "clean_cartridges": {
+      "name": "Rengør patroner",
+      "description": "Udfør en standard rengøring af printerpatronerne.",
+      "fields": {
+        "entry": {
+          "name": "Patron",
+          "description": "Printerpatronen"
+        }
+      }
+    },
+    "deep_clean_cartridges": {
+      "name": "Dybderengøring af patroner",
+      "description": "Udfør en dybderengøring af printerpatronerne.",
+      "fields": {
+        "entry": {
+          "name": "Patron",
+          "description": "Printerpatronen"
+        }
+      }
+    },
+    "print_test_page": {
+      "name": "Udskriv testside",
+      "description": "Udskriv en testside på printeren.",
+      "fields": {
+        "entry": {
+          "name": "Patron",
+          "description": "Printerpatronen"
+        }
+      }
+    }
   }
 }

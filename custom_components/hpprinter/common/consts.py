@@ -52,6 +52,7 @@ MODEL_PROPERTY = "make_and_model"
 
 PRODUCT_STATUS_ENDPOINT = "/DevMgmt/ProductStatusDyn.xml"
 PRODUCT_MAIN_ENDPOINT = "/DevMgmt/ProductConfigDyn.xml"
+INTERNAL_PRINT_ENDPOINT = "/DevMgmt/InternalPrintDyn.xml"
 
 PRODUCT_STATUS_OFFLINE_PAYLOAD = {
     "ProductStatusDyn": {"Status": [{"StatusCategory": "off"}]}
@@ -66,3 +67,33 @@ DURATION_UNITS = {
 }
 
 DEFAULT_INTERVAL = "5m"
+
+CLEAN_CARTRIDGE_XML = '''
+<ipdyn:InternalPrintDyn
+	xmlns:ipdyn="http://www.hp.com/schemas/imaging/con/ledm/internalprintdyn/2008/03/21"
+	xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"
+	xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06"
+	xmlns:fw="http://www.hp.com/schemas/imaging/con/firewall/2011/01/05">
+	<ipdyn:JobType>cleaningPage</ipdyn:JobType>
+</ipdyn:InternalPrintDyn>
+'''
+
+DEEP_CLEAN_CARTRIDGE_XML = '''
+<ipdyn:InternalPrintDyn
+	xmlns:ipdyn="http://www.hp.com/schemas/imaging/con/ledm/internalprintdyn/2008/03/21"
+	xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"
+	xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06"
+	xmlns:fw="http://www.hp.com/schemas/imaging/con/firewall/2011/01/05">
+	<ipdyn:JobType>cleaningPageLevel2</ipdyn:JobType>
+</ipdyn:InternalPrintDyn>
+'''
+
+PRINT_TEST_PAGE_XML = '''
+<ipdyn:InternalPrintDyn
+	xmlns:ipdyn="http://www.hp.com/schemas/imaging/con/ledm/internalprintdyn/2008/03/21"
+	xmlns:dd="http://www.hp.com/schemas/imaging/con/dictionaries/1.0/"
+	xmlns:dd3="http://www.hp.com/schemas/imaging/con/dictionaries/2009/04/06"
+	xmlns:fw="http://www.hp.com/schemas/imaging/con/firewall/2011/01/05">
+	<ipdyn:JobType>cleaningVerificationPage</ipdyn:JobType>
+</ipdyn:InternalPrintDyn>
+'''

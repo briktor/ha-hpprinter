@@ -458,6 +458,25 @@ class RestAPIv2:
 
         return result
 
+    async def _post_request(self, endpoint: str, data: str, headers: dict = None, timeout: int = 5):
+        url = f"{self.config_data.url}{endpoint}"
+        timeout = ClientTimeout(total=timeout)
+        
+        if headers is None:
+            headers = {"Content-Type": "text/xml"}
+        
+        try:
+            async with self._session.post(url, data=data, headers=headers, timeout=timeout) as response:
+                response.raise_for_status()
+                return await response.text()
+        except Exception as ex:
+            exc_type, exc_obj, tb = sys.exc_info()
+            line_number = tb.tb_lineno
+            _LOGGER.error(
+                f"Failed to POST to {url}, Error: {ex}, Line: {line_number}"
+            )
+            raise
+
     def _clean_data(self, xml) -> dict:
         xml_data = ElementTree.fromstring(xml)
 

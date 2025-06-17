@@ -146,5 +146,37 @@
         "title": "Alternativer for HP -skriver."
       }
     }
+  },
+  "services": {
+    "clean_cartridges": {
+      "name": "Rengjør patroner",
+      "description": "Utfør en standard rengjøring av skriverpatronene.",
+      "fields": {
+        "entry": {
+          "name": "Patron",
+          "description": "Skriverpatronen"
+        }
+      }
+    },
+    "deep_clean_cartridges": {
+      "name": "Dyp rengjøring av patroner",
+      "description": "Utfør en grundig rengjøring av skriverpatronene.",
+      "fields": {
+        "entry": {
+          "name": "Patron",
+          "description": "Skriverpatronen"
+        }
+      }
+    },
+    "print_test_page": {
+      "name": "Skriv ut testside",
+      "description": "Skriv ut en testside på skriveren.",
+      "fields": {
+        "entry": {
+          "name": "Patron",
+          "description": "Skriverpatronen"
+        }
+      }
+    }
   }
 }

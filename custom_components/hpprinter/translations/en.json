@@ -149,5 +149,37 @@
         "title": "Options for HP Printer."
       }
     }
+  },
+  "services": {
+    "clean_cartridges": {
+      "name": "Clean Cartridges",
+      "description": "Perform a standard cleaning of the printer cartridges.",
+      "fields": {
+        "entry": {
+          "name": "Entry",
+          "description": "The printer entry"
+        }
+      }
+    },
+    "deep_clean_cartridges": {
+      "name": "Deep Clean Cartridges",
+      "description": "Perform a deep cleaning of the printer cartridges.",
+      "fields": {
+        "entry": {
+          "name": "Entry",
+          "description": "The printer entry"
+        }
+      }
+    },
+    "print_test_page": {
+      "name": "Print Test Page",
+      "description": "Print a test page on the printer.",
+      "fields": {
+        "entry": {
+          "name": "Entry",
+          "description": "The printer entry"
+        }
+      }
+    }
   }
 }

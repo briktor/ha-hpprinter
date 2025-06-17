@@ -146,5 +146,37 @@
         "title": "Opties voor HP Printer."
       }
     }
+  },
+  "services": {
+    "clean_cartridges": {
+      "name": "Cartridges reinigen",
+      "description": "Voer een standaardreiniging van de printercartridges uit.",
+      "fields": {
+        "entry": {
+          "name": "Invoer",
+          "description": "De printerinvoer"
+        }
+      }
+    },
+    "deep_clean_cartridges": {
+      "name": "Cartridges diep reinigen",
+      "description": "Voer een diepe reiniging van de printercartridges uit.",
+      "fields": {
+        "entry": {
+          "name": "Invoer",
+          "description": "De printerinvoer"
+        }
+      }
+    },
+    "print_test_page": {
+      "name": "Testpagina afdrukken",
+      "description": "Druk een testpagina af op de printer.",
+      "fields": {
+        "entry": {
+          "name": "Invoer",
+          "description": "De printerinvoer"
+        }
+      }
+    }
   }
 }

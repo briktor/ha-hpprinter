@@ -146,5 +146,37 @@
         "title": "Options pour l'imprimante HP."
       }
     }
+  },
+  "services": {
+    "clean_cartridges": {
+      "name": "Nettoyer les cartouches",
+      "description": "Effectuer un nettoyage standard des cartouches d'imprimante.",
+      "fields": {
+        "entry": {
+          "name": "Entrée",
+          "description": "L'entrée de l'imprimante"
+        }
+      }
+    },
+    "deep_clean_cartridges": {
+      "name": "Nettoyage en profondeur des cartouches",
+      "description": "Effectuer un nettoyage en profondeur des cartouches d'imprimante.",
+      "fields": {
+        "entry": {
+          "name": "Entrée",
+          "description": "L'entrée de l'imprimante"
+        }
+      }
+    },
+    "print_test_page": {
+      "name": "Imprimer une page de test",
+      "description": "Imprimer une page de test sur l'imprimante.",
+      "fields": {
+        "entry": {
+          "name": "Entrée",
+          "description": "L'entrée de l'imprimante"
+        }
+      }
+    }
   }
 }

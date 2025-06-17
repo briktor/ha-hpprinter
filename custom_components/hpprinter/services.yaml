@@ -1,0 +1,23 @@
+clean_cartridges:
+  fields:
+    entry:
+      required: true
+      selector:
+        config_entry:
+          integration: "hpprinter"
+
+deep_clean_cartridges:
+  fields:
+    entry:
+      required: true
+      selector:
+        config_entry:
+          integration: "hpprinter"
+
+print_test_page:
+  fields:
+    entry:
+      required: true
+      selector:
+        config_entry:
+          integration: "hpprinter"
